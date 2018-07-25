@@ -14,6 +14,7 @@ class TumblrApiManager {
     let baseURLString = "https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts"
     let requestType = "/photo?"
     let apiKey = "api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV"
+    let optionalParam = "&filter=text"
     
     var session: URLSession
     
@@ -22,7 +23,7 @@ class TumblrApiManager {
     }
     
     func getPosts(completion: @escaping ([Post]?, Error?) -> ()) {
-        guard let url = URL(string: baseURLString + requestType + apiKey) else { return }
+        guard let url = URL(string: baseURLString + requestType + apiKey + optionalParam) else { return }
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let task = session.dataTask(with: request) { (data, response, error) in
             if let error = error {
@@ -37,4 +38,5 @@ class TumblrApiManager {
         }
         task.resume()
     }
+    
 }

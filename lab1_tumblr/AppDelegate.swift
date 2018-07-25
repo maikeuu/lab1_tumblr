@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow()
         window?.makeKeyAndVisible()
+//        let navController = UINavigationController(rootViewController: HomeFeedController())
         window?.rootViewController = HomeFeedController()
+//        window?.backgroundColor = UIColor.rgb(red: 52, green: 82, blue: 111)
         return true
     }
 
