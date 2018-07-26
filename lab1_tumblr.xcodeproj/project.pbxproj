@@ -21,6 +21,7 @@
 		A825E09E2107E577003D16A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825E09D2107E577003D16A8 /* Extensions.swift */; };
 		A825E0A02107EFC7003D16A8 /* TumblrApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825E09F2107EFC7003D16A8 /* TumblrApiManager.swift */; };
 		A825E0A22107F01E003D16A8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825E0A12107F01E003D16A8 /* Post.swift */; };
+		A89EF3E62109393300B76FC2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89EF3E52109393300B76FC2 /* MainTabBarController.swift */; };
 		A8F31CA52108F61500577C58 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F31CA42108F61500577C58 /* PostCell.swift */; };
 		A8F31CA82108F93D00577C58 /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F31CA72108F93D00577C58 /* PostHeader.swift */; };
 		A8F31CAA2108FBA900577C58 /* PostFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F31CA92108FBA900577C58 /* PostFooter.swift */; };
@@ -73,6 +74,7 @@
 		A825E09D2107E577003D16A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A825E09F2107EFC7003D16A8 /* TumblrApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrApiManager.swift; sourceTree = "<group>"; };
 		A825E0A12107F01E003D16A8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A89EF3E52109393300B76FC2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A8F31CA42108F61500577C58 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		A8F31CA72108F93D00577C58 /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
 		A8F31CA92108FBA900577C58 /* PostFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFooter.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		C44BE32D202C075600CDF34C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A89EF3E52109393300B76FC2 /* MainTabBarController.swift */,
 				73DBEE7F2022CCE200BD31E3 /* PhotosViewController.swift */,
 				C44BE32B202C074C00CDF34C /* PhotosDetailViewController.swift */,
 				C458EC90202C44EB004B0575 /* FullScreenPhotoViewController.swift */,
@@ -513,6 +516,7 @@
 				A8F31CAA2108FBA900577C58 /* PostFooter.swift in Sources */,
 				73DBEE822022D52000BD31E3 /* PhotoCell.swift in Sources */,
 				A825E0A02107EFC7003D16A8 /* TumblrApiManager.swift in Sources */,
+				A89EF3E62109393300B76FC2 /* MainTabBarController.swift in Sources */,
 				73DBEE802022CCE200BD31E3 /* PhotosViewController.swift in Sources */,
 				A825E0A22107F01E003D16A8 /* Post.swift in Sources */,
 				C458EC91202C44EB004B0575 /* FullScreenPhotoViewController.swift in Sources */,

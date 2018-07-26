@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
 //        let navController = UINavigationController(rootViewController: HomeFeedController())
-        window?.rootViewController = HomeFeedController()
+        window?.rootViewController = MainTabBarController()
 //        window?.backgroundColor = UIColor.rgb(red: 52, green: 82, blue: 111)
         return true
     }

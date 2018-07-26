@@ -10,7 +10,6 @@ import UIKit
 
 class HomeFeedController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let tumblrBlue = UIColor.rgb(red: 52, green: 82, blue: 111)
     
     let tableView: UITableView = {
         let tv = UITableView(frame: .zero, style: .grouped)
@@ -27,10 +26,12 @@ class HomeFeedController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        
+        navigationController?.navigationBar.isHidden = true
         tableView.delegate = self
         tableView.dataSource = self
         let margins = view.layoutMarginsGuide
-        tableView.anchor(top: margins.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        tableView.anchor(top: margins.topAnchor, left: view.leftAnchor, bottom: margins.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         view.backgroundColor = UIColor.rgb(red: 52, green: 82, blue: 111)
         tableView.backgroundColor = UIColor.rgb(red: 52, green: 82, blue: 111)
         
