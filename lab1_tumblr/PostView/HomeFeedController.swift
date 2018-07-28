@@ -45,6 +45,10 @@ class HomeFeedController: UIViewController, UITableViewDelegate, UITableViewData
         fetchPosts()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(DetailPhotoViewController(), animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 55
     }
